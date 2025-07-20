@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Static Files</title>
+</head>
+<body>
+    <h1>Test de Archivos Estáticos</h1>
+    
+    <h2>Prueba 1: Ruta relativa sin ./</h2>
+    <img src="static/img/logo.png" alt="Logo test 1" style="height: 100px;">
+    
+    <h2>Prueba 2: Ruta relativa con ./</h2>
+    <img src="./static/img/logo.png" alt="Logo test 2" style="height: 100px;">
+    
+    <h2>Prueba 3: Ruta absoluta desde raíz</h2>
+    <img src="/appleServicePremium/static/img/logo.png" alt="Logo test 3" style="height: 100px;">
+    
+    <h2>Video Test</h2>
+    <video controls style="width: 300px;">
+        <source src="static/video/iPhone_16_Pro.mp4" type="video/mp4">
+        Video no disponible
+    </video>
+    
+    <h2>Enlaces directos para probar:</h2>
+    <ul>
+        <li><a href="static/img/logo.png" target="_blank">static/img/logo.png</a></li>
+        <li><a href="./static/img/logo.png" target="_blank">./static/img/logo.png</a></li>
+        <li><a href="/appleServicePremium/static/img/logo.png" target="_blank">/appleServicePremium/static/img/logo.png</a></li>
+    </ul>
+</body>
+</html>
