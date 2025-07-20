@@ -6,6 +6,10 @@ def base_view(request):
     """Vista para mostrar la plantilla base.html"""
     return render(request, 'base.html')
 
+def home_view(request):
+    """Vista para mostrar la plantilla home.html"""
+    return render(request, 'home.html')
+
 def about_view(request):
     """Vista para mostrar la plantilla about.html"""
     return render(request, 'about.html')

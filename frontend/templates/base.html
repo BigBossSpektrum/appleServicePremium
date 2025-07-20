@@ -4,14 +4,71 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple Service</title>
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Estilos mínimos personalizados */
+        .navbar-custom {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link-custom {
+            color: #2c3e50 !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link-custom:hover {
+            color: #007AFF !important;
+            background-color: rgba(0, 122, 255, 0.1) !important;
+            transform: translateY(-2px);
+        }
+        
+        .logo-hover {
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-hover:hover {
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="{% url 'base' %}">Home</a></li>
-            <li><a href="{% url 'about' %}">About</a></li>
-            <li><a href="{% url 'contact' %}">Contact</a></li>
-        </ul>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 navbar-custom rounded-bottom-4 shadow">
+        <div class="container-fluid px-4">
+            <!-- Logo -->
+            <a class="navbar-brand logo-hover" href="{% url 'home' %}">
+                <img src="{% static 'img/logo.png' %}" alt="Apple Service Premium" 
+                     class="rounded-2" style="height: 50px; width: auto;">
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center text-lg-start">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="{% url 'home' %}">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="{% url 'about' %}">Acerca de</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <main>
         {% block content %}
@@ -20,5 +77,8 @@
     <footer>
         <p>&copy; 2025 Apple Service, All rights reserved.</p>
     </footer>
+    
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
