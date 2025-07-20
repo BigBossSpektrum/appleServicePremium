@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Service Premium</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        /* Estilos mínimos personalizados */
+        .navbar-custom {
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%) !important;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .nav-link-custom {
+            color: #2c3e50 !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link-custom:hover {
+            color: #007AFF !important;
+            background-color: rgba(0, 122, 255, 0.1) !important;
+            transform: translateY(-2px);
+        }
+        
+        .logo-hover {
+            transition: transform 0.3s ease;
+        }
+        
+        .logo-hover:hover {
+            transform: scale(1.05);
+        }
+        
+        .min-vh-75 {
+            min-height: 75vh;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+        }
+
+        section {
+            scroll-margin-top: 80px;
+        }
+
+        .social-links a {
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top py-3 navbar-custom rounded-bottom-4 shadow">
+        <div class="container-fluid px-4">
+            <!-- Logo -->
+            <a class="navbar-brand logo-hover" href="#home">
+                <img src="static/img/logo.png" alt="Apple Service Premium" 
+                     class="rounded-2" style="height: 50px; width: auto;">
+            </a>
+            
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler border-0 shadow-none" type="button" 
+                    data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center text-lg-start">
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#productos">Productos</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#informacion">Acerca de</a>
+                    </li>
+                    <li class="nav-item mx-1">
+                        <a class="nav-link nav-link-custom fw-bold px-3 py-2 rounded-2" href="#contacto">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero/Presentation Section -->
+        <section id="home" class="hero-section bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center min-vh-75">
+                    <div class="col-lg-6">
+                        <h1 class="display-3 fw-bold text-dark mb-4">Apple Service Premium</h1>
+                        <p class="lead mb-4">Tu tienda local de confianza para productos Apple. Reparaciones, accesorios y servicios técnicos especializados con más de 10 años de experiencia.</p>
+                        <div class="d-flex gap-3">
+                            <a href="#productos" class="btn btn-primary btn-lg">Ver Productos</a>
+                            <a href="#contacto" class="btn btn-outline-secondary btn-lg">Contactar</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <video class="img-fluid rounded shadow" style="max-height: 400px; width: 100%;" autoplay muted loop playsinline>
+                            <source src="static/video/iPhone_16_Pro.mp4" type="video/mp4">
+                            <p>Tu navegador no soporta el elemento de video.</p>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Section -->
+        <section id="informacion" class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold">¿Por qué elegirnos?</h2>
+                        <p class="lead text-muted">Somos especialistas en el ecosistema Apple</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-tools display-4 text-primary mb-3"></i>
+                                <h5 class="card-title">Reparaciones Expertas</h5>
+                                <p class="card-text">Técnicos certificados con más de 10 años de experiencia en productos Apple.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-shield-check display-4 text-success mb-3"></i>
+                                <h5 class="card-title">Garantía Completa</h5>
+                                <p class="card-text">Todos nuestros servicios incluyen garantía de 6 meses en reparaciones.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-lightning-charge display-4 text-warning mb-3"></i>
+                                <h5 class="card-title">Servicio Rápido</h5>
+                                <p class="card-text">Diagnóstico gratuito y reparaciones express en menos de 24 horas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="productos" class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold">Nuestros Productos y Servicios</h2>
+                        <p class="lead text-muted">Todo lo que necesitas para tu dispositivo Apple</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-phone display-4 text-primary mb-3"></i>
+                                <h5 class="card-title">Reparación iPhone</h5>
+                                <p class="card-text">Pantallas, baterías, cámaras y más. Reparaciones con garantía.</p>
+                                <p class="h5 text-primary">Desde $50</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-laptop display-4 text-success mb-3"></i>
+                                <h5 class="card-title">Servicio MacBook</h5>
+                                <p class="card-text">Limpieza, actualización de RAM, SSD y reparaciones.</p>
+                                <p class="h5 text-success">Desde $80</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-headphones display-4 text-warning mb-3"></i>
+                                <h5 class="card-title">Accesorios</h5>
+                                <p class="card-text">Fundas, cargadores, AirPods y accesorios originales.</p>
+                                <p class="h5 text-warning">Desde $15</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-tablet display-4 text-info mb-3"></i>
+                                <h5 class="card-title">Reparación iPad</h5>
+                                <p class="card-text">Pantallas táctiles, botones y diagnóstico completo.</p>
+                                <p class="h5 text-info">Desde $70</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-gear display-4 text-secondary mb-3"></i>
+                                <h5 class="card-title">Mantenimiento</h5>
+                                <p class="card-text">Limpieza profunda y optimización de rendimiento.</p>
+                                <p class="h5 text-secondary">Desde $30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center p-4">
+                                <i class="bi bi-shield-check display-4 text-danger mb-3"></i>
+                                <h5 class="card-title">Protección</h5>
+                                <p class="card-text">Micas de cristal templado y protectores premium.</p>
+                                <p class="h5 text-danger">Desde $10</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-5 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center mb-5">
+                        <h2 class="display-5 fw-bold">Contáctanos</h2>
+                        <p class="lead">Estamos aquí para ayudarte con tu dispositivo Apple</p>
+                    </div>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <i class="bi bi-geo-alt display-4 text-primary mb-3"></i>
+                            <h5>Ubicación</h5>
+                            <p>Av. Principal 123<br>Centro, Ciudad<br>Código Postal 12345</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <i class="bi bi-telephone display-4 text-success mb-3"></i>
+                            <h5>Teléfono</h5>
+                            <p><a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-8900</a><br>
+                            <a href="tel:+1234567891" class="text-white text-decoration-none">+1 (234) 567-8901</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <i class="bi bi-clock display-4 text-warning mb-3"></i>
+                            <h5>Horarios</h5>
+                            <p>Lunes - Viernes: 9:00 AM - 7:00 PM<br>
+                            Sábados: 10:00 AM - 6:00 PM<br>
+                            Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Social Media Links -->
+                <div class="row mt-5">
+                    <div class="col-12 text-center social-links">
+                        <h4 class="mb-4">Síguenos en Redes Sociales</h4>
+                        <div class="d-flex justify-content-center gap-4">
+                            <a href="https://facebook.com/appleservicepremium" class="text-white" target="_blank">
+                                <i class="bi bi-facebook display-5"></i>
+                            </a>
+                            <a href="https://instagram.com/appleservicepremium" class="text-white" target="_blank">
+                                <i class="bi bi-instagram display-5"></i>
+                            </a>
+                            <a href="https://twitter.com/appleservicepremium" class="text-white" target="_blank">
+                                <i class="bi bi-twitter display-5"></i>
+                            </a>
+                            <a href="https://wa.me/1234567890" class="text-white" target="_blank">
+                                <i class="bi bi-whatsapp display-5"></i>
+                            </a>
+                            <a href="mailto:info@appleservicepremium.com" class="text-white" target="_blank">
+                                <i class="bi bi-envelope display-5"></i>
+                            </a>
+                        </div>
+                        <div class="mt-4">
+                            <p class="mb-2">Envíanos un mensaje directo:</p>
+                            <a href="https://wa.me/1234567890?text=Hola,%20necesito%20información%20sobre%20sus%20servicios" 
+                               class="btn btn-success btn-lg" target="_blank">
+                                <i class="bi bi-whatsapp"></i> WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-light py-4">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Apple Service Premium. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
